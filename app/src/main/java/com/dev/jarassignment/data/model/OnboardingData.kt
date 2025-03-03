@@ -4,7 +4,7 @@ data class OnboardingData(
     val toolBarText: String,
     val introTitle: String,
     val introSubtitle: String,
-    val educationCardList: List<EducationCardList>,
+    val educationCardList: List<EducationCard>,
     val saveButtonCta: SaveButtonCta,
     val ctaLottie: String,
     val screenType: String,

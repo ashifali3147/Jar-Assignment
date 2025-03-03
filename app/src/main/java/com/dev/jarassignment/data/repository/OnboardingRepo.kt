@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class OnboardingRepo {
-    suspend fun fetchPosts():BaseResponse<OnboardingBaseModel>?  {
+    suspend fun getOnboardingData():BaseResponse<OnboardingBaseModel>?  {
         return withContext(Dispatchers.IO) {
             val response = ApiManager.service.getOnboardingData()
             if (response.isSuccessful) response.body() else null

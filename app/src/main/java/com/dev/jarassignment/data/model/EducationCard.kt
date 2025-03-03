@@ -1,6 +1,6 @@
 package com.dev.jarassignment.data.model
 
-data class EducationCardList(
+data class EducationCard(
     val image: String,
     val collapsedStateText: String,
     val expandStateText: String,
